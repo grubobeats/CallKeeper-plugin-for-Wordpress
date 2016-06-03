@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: CallKeeper Widget for WordPress
-Plugin URI: https://github.com/grubobeats
+Plugin URI: https://github.com/grubobeats/CallKeeper-plugin-for-Wordpress
 Description: Integrate CallKeeper to WordPress
 Author: Vladan Paunovic
 Author URI: http://www.givemejobtoday.com/
