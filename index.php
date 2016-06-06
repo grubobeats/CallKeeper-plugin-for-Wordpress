@@ -52,7 +52,7 @@ function my_plugin_options() {
 		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
 	}
     $script_added_text = "";
-    echo "<form method='POST' action='". $_SERVER['HTTP_REFERER'] . "'>";
+    echo "<form method='POST' action='http://" . $_SERVER['SERVER_NAME'] . "/wp-admin/options-general.php?page=callkeeper-script'>";
 	echo '<div class="wrap">';
 	echo '<h3>CallKeeper Wordpress script plugin.</h3>';
 	echo '</div>';
