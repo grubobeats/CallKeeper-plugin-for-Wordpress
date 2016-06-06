@@ -57,20 +57,20 @@ function my_plugin_options() {
 	echo '<h3>CallKeeper Wordpress script plugin.</h3>';
 	echo '</div>';
     ?>
-    <p id="callkeeper-option">More about CallKeeper you can find <a href="http://callkeeper.ru">here</a></p>
-    <p>Script can be found in your admin panel</p>
+    <p id="callkeeper-option">Больше о CallKeeper услуг вы можете найти <a href="http://callkeeper.ru">здесь</a></p>
+    <p>Код можно найти в вашей админке</p>
     <div class="ck_code">
         &lt;script&gt; type="text/javascript" src="//callkeeper.ru/modules/widget/db/?callkeeper_code=<span class="ck_code_span">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>" charset="UTF-8"&gt;&lt;/script&gt;<br>
 &lt;script&gt; type="text/javascript" src="//callkeeper.ru/modules/widget/callkeeper.js" charset="UTF-8"&gt; &lt;/script&gt;
     </div>
     <?php $option = esc_html(get_option( 'callkeeper_input')); ?>
-    <h3>Insert widget hash here: </h3>
+    <h3>Введите хэш виджета здесь: </h3>
     <input name="callkeeper_input" type="text" value="<?php echo $option ?>" size="80" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">
     <input type="submit" value="Submit script" name="submit">
     <?php
     if (isset($_POST['submit'])) {
         update_option( 'callkeeper_input', $_POST['callkeeper_input']);
-        $script_added_text = "Script successfully added to your site!";
+        $script_added_text = "Код успешно добавлен в ваш сайт!";
     }
     echo "</form>";
     echo "<div class='ck_success'>" . $script_added_text . "</div>";
